@@ -1,0 +1,15 @@
+@import "./config/reset";
+@import "./config/variables";
+@import "./config/mixins";
+
+
+.wrap {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.button {
+    @include sign-in-button;
+}
