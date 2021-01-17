@@ -1,15 +1,30 @@
 @import "./config/reset";
 @import "./config/variables";
 @import "./config/mixins";
+@import "./components/navigathon";
 
 
-.wrap {
-    width: 1366px;
-    margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
+.wrap {
+    max-width: 1366px;
+    margin: 0 auto;
+    
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #181F2F;
+}
+
+a {
+    text-decoration: none;
+}
 .button {
     @include sign-in-button;
 }
+/*
+    &__item:nth-child(1) {
+        width: 200px;
+    }
+*/
